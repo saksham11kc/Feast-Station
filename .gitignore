@@ -7,8 +7,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
+# Node modules and build output
+node_modules/
+dist/
 dist-ssr
 *.local
 
@@ -22,3 +23,22 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Instrumented libs and coverage
+lib-cov
+coverage
+*.lcov
+.nyc_output
+
+# Grunt intermediate storage
+.grunt
+
