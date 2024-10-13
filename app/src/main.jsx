@@ -1,10 +1,28 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import { createGlobalStyle } from "styled-components";
 
-createRoot(document.getElementById('root')).render(
+const GlobalStyle = createGlobalStyle`
+  
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+  }
+  body{
+    background-color: #323334;
+    color:white;
+    min-height: 100vh;
+    font-family:  'Inter', sans-serif;
+  }
+
+`;
+createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <GlobalStyle></GlobalStyle>
     <App />
-  </StrictMode>,
-)
+  </StrictMode>
+);
