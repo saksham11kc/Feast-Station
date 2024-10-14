@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import Logo from "/DALL·E 2024-10-13 18.19.52 - A vibrant, modern logo for a restaurant called 'Feast Station'. The design should emphasize a station theme, with subtle culinary elements like plates-modified.png";
 import SearchResult from "./components/SearchResults/SearchResult";
-export const BASE_URL = "http://localhost:9000";
+export const BASE_URL = "https://server4feast.vercel.app"; // Change it with your deployment url if any
 
 const App = () => {
   const [data, setData] = useState(null);
